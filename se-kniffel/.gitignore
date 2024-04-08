@@ -1,19 +1,40 @@
-# Compiled class file
+# bloop and metals
+.bloop
+.bsp
+
+# metals
+project/metals.sbt
+.metals
+
+# vs code
+.vscode
+
+#java
+*.class
+
+# scala 3
+.tasty
+
+# sbt
+project/project/
+project/target/
 target/
 
-# IntelliJ IDEA project files
-.idea/
 
-# Eclipse project files
-.classpath
-.project
-.settings/
+# coursier
+null/
 
-# Mac OS files
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+# mac
 .DS_Store
 
-# SBT project files
-.project
-.target/
-
-/.bsp/
+# other?
+.history
+.scala_dependencies
+.cache-main
