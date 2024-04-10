@@ -264,3 +264,136 @@ create table fingerprints(
 2024.04.07 16:43:40 INFO  Shutting down server
 2024.04.07 16:43:40 INFO  shutting down Metals
 2024.04.07 16:43:40 INFO  Exiting server
+2024.04.08 02:10:30 INFO  Started: Metals version 1.2.2+118-7180b5c2-SNAPSHOT in folders 'C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel' for client Visual Studio Code 1.88.0.
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [scribe.slf4j.ScribeServiceProvider@1c63391f]
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7e812b86]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1c63391f]
+2024.04.08 02:10:30 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.04.08 02:10:32 INFO  Attempting to connect to the build server...
+2024.04.08 02:10:32 INFO  Replacing bloop java home C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot with java home at C:\Users\Samsung\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17%252B35\OpenJDK17-jdk_x64_windows_hotspot_17_35.zip\jdk-17+35.
+2024.04.08 02:10:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel\.metals\bsp.trace.json or C:\Users\Samsung\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.04.08 02:10:37 INFO  time: Connected to build server in 5.4s
+2024.04.08 02:10:37 INFO  Connected to Build server: Bloop v1.5.15
+2024.04.08 02:10:38 INFO  time: Imported build in 0.14s
+2024.04.08 02:10:52 INFO  no build target found for C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel\se-kniffel\src\test\scala\example\kniffelSpec.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.04.08 02:10:58 INFO  time: indexed workspace in 6.1s
+2024.04.08 02:10:58 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 02:10:58 INFO  compiling root (2 scala sources)
+2024.04.08 02:11:03 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 02:11:03 INFO  compiling root-test (1 scala source)
+2024.04.08 02:11:09 INFO  time: compiled root in 10s
+2024.04.08 02:11:09 INFO  time: compiled root-test in 5.73s
+2024.04.08 02:11:09 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 02:11:09 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 02:22:36 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 02:24:33 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 02:24:40 INFO  time: evaluated worksheet 'kniffel_worksheet.worksheet.sc' in 6.42s
+2024.04.08 19:05:12 INFO  Shutting down server
+2024.04.08 19:05:12 INFO  shutting down Metals
+2024.04.08 19:05:12 ERROR build shutdown: bloop
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Connection reset by peer
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:170)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:167)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Connection reset by peer
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy2.$Proxy10.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:170)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:167)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:97)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:53)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+	at sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:123)
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.nio.channels.Channels.writeFully(Channels.java:93)
+	at java.nio.channels.Channels$1.write(Channels.java:171)
+	at java.io.OutputStream.write(OutputStream.java:127)
+	at java.nio.channels.Channels$1.write(Channels.java:151)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:68)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy2.$Proxy10.buildShutdown(null)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:170)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:167)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.04.08 19:05:12 INFO  Exiting server
+2024.04.08 19:07:23 INFO  Started: Metals version 1.2.2+118-7180b5c2-SNAPSHOT in folders 'C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel' for client Visual Studio Code 1.88.0.
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [scribe.slf4j.ScribeServiceProvider@7e98ceb2]
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5485afc5]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7e98ceb2]
+2024.04.08 19:07:23 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.04.08 19:07:24 INFO  Attempting to connect to the build server...
+2024.04.08 19:07:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel\.metals\bsp.trace.json or C:\Users\Samsung\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.04.08 19:07:25 INFO  time: Connected to build server in 1.14s
+2024.04.08 19:07:25 INFO  Connected to Build server: Bloop v1.5.15
+2024.04.08 19:07:25 INFO  time: Imported build in 0.17s
+2024.04.08 19:07:32 INFO  time: indexed workspace in 6.73s
+2024.04.08 19:07:32 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 19:07:44 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 19:07:44 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 19:07:50 INFO  time: evaluated worksheet 'kniffel_worksheet.worksheet.sc' in 5.66s
+2024.04.08 19:07:50 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.08 19:07:51 INFO  time: evaluated worksheet 'kniffel_worksheet.worksheet.sc' in 0.75s
+2024.04.08 19:07:53 INFO  time: code lens generation in 2.27s
+2024.04.08 19:07:53 INFO  time: code lens generation in 2.75s
+2024.04.08 19:07:53 INFO  time: code lens generation in 2.75s
+2024.04.08 19:07:53 INFO  time: code lens generation in 2.75s
+2024.04.08 19:13:03 INFO  Shutting down server
+2024.04.08 19:13:03 INFO  shutting down Metals
+2024.04.08 19:13:03 INFO  Shut down connection with build server.
+2024.04.08 19:13:03 INFO  Exiting server
+2024.04.10 22:16:56 INFO  Started: Metals version 1.2.2+118-7180b5c2-SNAPSHOT in folders 'C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel' for client Visual Studio Code 1.88.0.
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [scribe.slf4j.ScribeServiceProvider@4f467f8d]
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@117cd932]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [scribe.slf4j.ScribeServiceProvider@4f467f8d]
+2024.04.10 22:16:56 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.04.10 22:16:59 INFO  Attempting to connect to the build server...
+2024.04.10 22:17:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel\.metals\bsp.trace.json or C:\Users\Samsung\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.04.10 22:17:00 INFO  time: Connected to build server in 1.17s
+2024.04.10 22:17:00 INFO  Connected to Build server: Bloop v1.5.15
+2024.04.10 22:17:00 INFO  time: Imported build in 0.17s
+2024.04.10 22:17:18 INFO  no build target found for C:\Users\Samsung\OneDrive - bwedu\Studium\AIN\Semester 4\Software Engineering\SE-Kniffel\se-kniffel\src\main\scala\example\kniffel_worksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.3
+2024.04.10 22:17:27 INFO  time: indexed workspace in 8.83s
+2024.04.10 22:17:27 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.10 22:17:38 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.10 22:17:38 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.10 22:17:45 INFO  time: evaluated worksheet 'kniffel_worksheet.worksheet.sc' in 7.21s
+2024.04.10 22:17:45 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.10 22:17:45 INFO  time: evaluated worksheet 'kniffel_worksheet.worksheet.sc' in 0.71s
+2024.04.10 22:17:48 INFO  time: code lens generation in 2.54s
+2024.04.10 22:17:48 INFO  time: code lens generation in 3.03s
+2024.04.10 22:17:48 INFO  time: code lens generation in 3.03s
+2024.04.10 22:17:48 INFO  time: code lens generation in 3.03s
+2024.04.10 22:17:53 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.10 22:17:53 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
+2024.04.10 22:17:59 WARN  Bloop is running with 11.0.16.1 but your code requires 17 to compile, this might cause some compilation issues when using JDK API unsupported by the Bloop's current JVM version
