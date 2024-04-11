@@ -5,5 +5,5 @@ object Main {
 }
 
 //
-// Trying to cause an Merge-Conflict with this Comment Michi
+// Trying to cause an Merge-Conflict with this Comment
 //
